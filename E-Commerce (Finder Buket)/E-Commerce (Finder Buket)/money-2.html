@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finder Bouquet | Money Bouquet</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- League Spartan Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
+    <!-- Dancing Script Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            opacity: 1;
+        }
+
+        img:hover {
+            opacity: .7;
+            cursor: pointer;
+        }
+
+        table {
+            border-spacing: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        td {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* slideshow */
+        #image-slide {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(0, 0, 0, 0.7);
+            z-index: 99999999;
+        }
+
+        #image-slide img {
+            opacity: 1;
+        }
+
+        .slidershow {
+            width: 600px;
+            /* width: 350px;
+            height: 350px; */
+            overflow: hidden;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .bar {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin: 6px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .active,
+        .bar:hover {
+            background-color: #fff;
+        }
+
+        input[name="r"] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .slides {
+            width: 500%;
+            height: 100%;
+            display: flex;
+        }
+
+        .slide {
+            width: 20%;
+            transition: 0.6s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #r1:checked~.s1 {
+            margin-left: 0;
+        }
+
+        #r2:checked~.s1 {
+            margin-left: -20%;
+        }
+
+        #r3:checked~.s1 {
+            margin-left: -40%;
+        }
+
+        #r4:checked~.s1 {
+            margin-left: -60%;
+        }
+
+        #r5:checked~.s1 {
+            margin-left: -80%;
+        }
+
+        /* Close button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-nav">
+        <h1 id="brand">Finder Bouquet</h1>
+        <div>
+            <span class="nav-item1">
+                <a href="index.html">Home</a>
+            </span>
+            <span class="nav-item2">
+                <a href="products.html">Products</a>
+            </span>
+            <span class="nav-item3">
+                <a href="contact.html">Contact Us</a>
+            </span>
+        </div>
+    </header>
+    <div class="product">
+        <h2 style="text-align: center; ">Money Bouquet</h2>
+        <table>
+            <tr>
+                <!-- update product -->
+                <td class="product">
+                    <img src="assets/money/money1.jpg">
+                    <br>
+                    <br>Lilac Dreamy Bouquet
+                    <br>
+                    <br>Rp.160.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money2.jpg">
+                    <br>
+                    <br>Green Dreamy Bouquet
+                    <br>
+                    <br>Rp.210.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="product">
+                    <img src="assets/money/money3.1.jpg">
+                    <br>
+                    <br>Black Dreamy Bouquet
+                    <br>
+                    <br>Rp.565.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money4.jpg">
+                    <br>
+                    <br>Red Rose Bouquet
+                    <br>
+                    <br>Rp.1.015.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="product">
+                    <img src="assets/money/money5.webp">
+                    <br>
+                    <br>Elegant Khaki Bouquet
+                    <br>
+                    <br>Rp.140.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money6.webp">
+                    <br>
+                    <br>Purple Baby Blue Bouquet
+                    <br>
+                    <br>Rp.185.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="product">
+                    <img src="assets/money/money7.webp">
+                    <br>
+                    <br>Pastel Bouquet
+                    <br>
+                    <br>Rp.125.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money8.webp">
+                    <br>
+                    <br>Red Purple Bouquet
+                    <br>
+                    <br>Rp.190.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="product">
+                    <img src="assets/money/money9.jpg">
+                    <br>
+                    <br>White Gold Bouquet
+                    <br>
+                    <br>Rp.125.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money10.webp">
+                    <br>
+                    <br>Baby Blue Bouquet
+                    <br>
+                    <br>Rp.530.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="product">
+                    <img src="assets/money/money11.webp">
+                    <br>
+                    <br>Violet Royal Bouquet
+                    <br>
+                    <br>Rp.250.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+                <td class="product">
+                    <img src="assets/money/money12.jpg">
+                    <br>
+                    <br>Blue Royal Bouquet
+                    <br>
+                    <br>Rp.575.000,-
+                    <br>
+                    <br>
+                    <a href="checkout.html">Beli sekarang</a>
+                </td>
+            </tr>
+        </table>
+
+        <div id="image-slide">
+            <a href="money.html">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+            </a>
+            <div class="slidershow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <div class="slide s1">
+                        <img src="assets/money/full/money3.1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/money/full/money3.2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/money/full/money3.3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Copyright &copy; 2022, by Silvy, Rhizma, Roro
+        <!-- &nbsp = untuk spasi, &copy = untuk lambang copyright -->
+    </footer>
+</body>
+
+</html>

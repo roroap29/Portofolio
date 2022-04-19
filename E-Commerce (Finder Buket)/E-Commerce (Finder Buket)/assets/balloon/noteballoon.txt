@@ -1,0 +1,6 @@
+Note:
+
+- balloon1-2 = Grand Opening Bouquet Balloon (Rp 196.000)
+- balloon3-4 = Snack Large Bouquet Balloon (Rp 162.000)
+- balloon5-6 = Mini Bouquet Balloon (Rp 97.000)
+- balloon7-8 = Flower Bouquet Balloon (Rp 189.000)
