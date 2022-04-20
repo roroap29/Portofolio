@@ -1,0 +1,218 @@
+body {
+    font-size: 20px;
+    font-family: monospace;
+    background-color: #aec6cf;
+}
+
+#container {
+    /*pembentukkan elemen kotak utama*/
+    margin: 50px auto;
+    background-color: #2c3e50;
+    height: 350px;
+    width: 650px;
+    border-radius: 25px;
+    border: 3px solid white;
+    position: relative;
+}
+
+#name {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#start {
+    /*pembentukkan desain tombol start*/
+    font-family: 'Fredoka One', cursive;
+    background-color: #9e4242;
+    border-bottom: 5px solid #3a1717;
+    border-bottom: 0px -2px #3a1717;
+    text-align: center;
+    padding: 15px 50px;
+    /* margin-top: 30; */
+    margin-top: 130px;
+    margin-left: 210px;
+    margin-right: 200px;
+    border-radius: 30px;
+    float: left;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#start:hover {
+    /*setting desain saat kursor berada di atas tombol*/
+    border: 3px solid #3a1717;
+    color: white;
+}
+
+#qImg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#qImg img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 20px;
+}
+
+#question {
+    /*elemen untuk peletakkan pertanyaan*/
+    width: 450px;
+    height: 125px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#question p {
+    /*tulisan dari pertanyaan*/
+    line-height: 90%;
+    text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 22px;
+    color: #fff;
+}
+
+#choices {
+    /*pembetukan elemen untuk peletakan opsi jawaban*/
+    width: 480px;
+    position: absolute;
+    right: 0;
+    top: 115px;
+    left: 240px;
+    color: #fff;
+
+}
+
+.choice {
+    /*tulisan dari opsi jawaban yang disediakan*/
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 18px;
+}
+
+.choice:hover {
+    /*setting desain saat kursor berada di atas tombol opsi jawaban*/
+    border: 3px solid #9e4242;
+    ;
+    font-weight: bold;
+    background-color: #fffdfa;
+    color: black;
+}
+
+#timer {
+    /*desain elemen untuk peletakan timer*/
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    bottom: 0px;
+    text-align: center;
+}
+
+#counter {
+    /*desain angka/tulisan yang menjadi countdown*/
+    font-family: 'Coiny', cursive;
+    font-size: 3em;
+    color: white;
+    margin-top: -30px;
+    margin-left: 35px;
+}
+
+#btimeGauge {
+    /*pembuatan elemen yang berada di bawah timer sebagai tanda progress countdown (berwarna putih)*/
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left: 25px;
+}
+
+#timeGauge {
+    /*pembuatan elemen yang berada di bawah timer sebagai tanda progress countdown (berwarna hijau)*/
+    height: 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+#progress {
+    /*pembuatan suatu elemen yang digunakan untuk peletakan lingkaran*/
+    width: 500px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    text-align: right;
+}
+
+.prog {
+    /*pembuatan lingkaran-lingkaran sebagai indikator soal*/
+    width: 15px;
+    height: 15px;
+    border: 2px solid whitesmoke;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#scoreContainer {
+    /*pembuatan suatu elemen kotak besar sebagai wadah pop up score*/
+    margin: -70px 0px;
+    background-color: white;
+    opacity: 0.95;
+    height: 350px;
+    width: 650px;
+    border-radius: 25px;
+    position: relative;
+    display: none;
+}
+
+#scoreContainer img {
+    /*peletakan atribut gambar*/
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    width: 65px;
+    height: 65px;
+}
+
+#scoreContainer p {
+    /*pembuatan dan desain persentase score game*/
+    position: absolute;
+    display: block;
+    width: 59px;
+    height: 59px;
+    top: 130px;
+    left: 280px;
+    font-size: 2.5em;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+#line {
+    margin-top: 130px;
+    background-color: white;
+    height: 2px;
+    width: 650px;
+    position: fixed;
+}
