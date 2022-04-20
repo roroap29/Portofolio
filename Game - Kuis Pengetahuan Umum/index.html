@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOW SMART ARE YOU?</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <!-- Play Game -->
+            <button class="start_btn">Play Game</button>
+        <!--<img class="gambar" src="5.png">-->
+        
+        <div class="wrapper">
+        <!-- Ketentuan Game -->
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. Kamu hanya memiliki waktu <span>15 detik</span> untuk setiap pertanyaan.</div>
+                <div class="info">2. Setelah kamu memilih jawaban, maka jawaban tidak dapat diurungkan.</div>
+                <div class="info">3. Kamu tidak dapat memilih opsi apa pun setelah waktu habis.</div>
+                <div class="info">4. Kamu tidak dapat keluar dari kuis saat kamu bermain.</div>
+                <div class="info">5. Kamu akan mendapatkan poin berdasarkan jawaban yang benar.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Quit Game</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+        <!-- Game dimulai -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">How Smart Are You?</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Memasukkan pertanyaan menggunakan JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Memasukkan pertanyaan menggunakan JavaScript -->
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="total_que">
+                    <!-- Memasukkan counter dengan menggunakan JavaScript -->
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+
+        <!-- Hasil Game -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">Kamu telah menyelesaikan semua pertanyaan!</div>
+            <div class="score_text">
+                <!-- Menampilkan hasil score game dengan menggunakan JavaScript-->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Game</button>
+                <button class="quit">Quit Game</button>
+            </div>
+        </div>
+    </div>
+
+        <!-- Memasukan pertanyaan dan jawaban di dalam file javaScript -->
+        <script src="js/questions.js"></script>
+
+        <!-- Codingan untuk soal dan pertanyaan -->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
